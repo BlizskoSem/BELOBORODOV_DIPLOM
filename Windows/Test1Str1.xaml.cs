@@ -17,9 +17,9 @@ namespace BELOBORODOV_DIPLOM.Windows
     /// <summary>
     /// Логика взаимодействия для Test1.xaml
     /// </summary>
-    public partial class Test1 : Window
+    public partial class Test1Str1 : Window
     {
-        public Test1()
+        public Test1Str1()
         {
             InitializeComponent();
         }

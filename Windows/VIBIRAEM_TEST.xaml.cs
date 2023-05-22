@@ -41,7 +41,7 @@ namespace BELOBORODOV_DIPLOM.Windows
 
         private void Трассы_Click_1(object sender, RoutedEventArgs e)
         {
-            Windows.Test1 test1 = new Windows.Test1();
+            Windows.Test1Str1 test1 = new Windows.Test1Str1();
             test1.Show();
             this.Close();
         }
