@@ -1,0 +1,42 @@
+﻿<Window x:Class="BELOBORODOV_DIPLOM.Windows.Test1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BELOBORODOV_DIPLOM.Windows"
+        mc:Ignorable="d"
+        Title="Тесты по формуле 1" Height="650" Width="850" WindowStartupLocation="CenterScreen"  >
+    <Grid Background="#202020">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Margin="10 20 10 440">
+
+            <TextBlock Text="Вопрос 1: Кто победил в гонке Формулы 1 в Абу Даби в 2020 году?" FontFamily="Times New Roman" Foreground="White" FontSize="24" Margin="0 0 0 0" />
+            <RadioButton GroupName="test1" Content="Льюис Хэмилтон" FontFamily="Times New Roman"  Margin="0 10 0 10" Foreground="White" FontSize="20" />
+            <RadioButton x:Name="test1Answer2" GroupName="test1" Content="Макс Ферстаппен" Checked="test1Answer2_Checked" FontFamily="Times New Roman" Margin="0 2 0 10" Foreground="White" FontSize="20" />
+            <RadioButton GroupName="test1" Content="Себастьян Феттель" FontFamily="Times New Roman" Margin="0 2 0 10" Background="White" Foreground="White" FontSize="20"/>
+
+
+
+        </StackPanel>
+        <StackPanel Grid.Row="0" Margin="10 180 10 270 ">
+            <TextBlock Text="Вопрос  2: Какое из этих мест является самой сложной трассой Формулы 1?" FontFamily="Times New Roman" Foreground="White" FontSize="24" />
+            <RadioButton x:Name="test2Answer1" GroupName="test2" Content="Монте-Карло" Checked="test2Answer1_Checked"  FontFamily="Times New Roman" Margin="0 10 0 10" Foreground="White" FontSize="20" />
+            <RadioButton GroupName="test2" Content="Сильверстоун" FontFamily="Times New Roman" Margin="0 5 0 10" Foreground="White" FontSize="20"  />
+            <RadioButton x:Name="test2Answer3" GroupName="test2" Content="Спа-Франкошам" FontFamily="Times New Roman" Margin="0 5 0 10" Foreground="White" FontSize="20" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="0" Margin="10 350 10 20 ">
+            <TextBlock Text="Вопрос 3: На какой трассе Михаэль Шумахер одержал свою первую победу?" FontFamily="Times New Roman" Foreground="White" FontSize="24" />
+            <RadioButton GroupName="test3Answer3" Content="Монте-Карло" FontFamily="Times New Roman" Margin="0 10 0 10" Background="White" Foreground="White" FontSize="20" />
+            <RadioButton GroupName="test3Answer3" Content="Сильверстоун" FontFamily="Times New Roman" Margin="0 5 0 10" Foreground="White" FontSize="20" />
+            <RadioButton x:Name="test3Answer3" GroupName="test3Answer3" Content="Спа-Франкошам " FontFamily="Times New Roman" Margin="0 5 0 3" Checked="test3Answer3_Checked" Foreground="White" FontSize="20" />
+            <Button Style="{StaticResource GradientButtonStyle}" Grid.Row="1"  Content="Следующая страница" Click="CheckAnswers_Click" Width="300" Height="40" Margin="-280 50 20 20" FontSize="24" FontFamily="Times New Roman" />
+            <Button x:Name="Выход" Style="{StaticResource GradientButtonStyle}"  Content="Выход" Click="Выход_Click" Width="300" Height="40"  FontSize="24" FontFamily="Times New Roman" Margin="0 -80 -300 0" />
+        </StackPanel>
+
+       
+    </Grid>
+</Window>

@@ -1,0 +1,41 @@
+﻿<Window x:Class="BELOBORODOV_DIPLOM.Windows.Authorization"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BELOBORODOV_DIPLOM.Windows"
+        mc:Ignorable="d"
+       Title="Authorization" Height="400" Width="350" WindowStartupLocation="CenterScreen">
+    <Grid Background="#202020">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Border VerticalAlignment="Bottom" Height="50" Background="#111111">
+            <Label Content="АВТОРИЗАЦИЯ" FontSize="22" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        </Border>
+        <Grid Grid.Row="1" Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Label Content="Имя пользователя:" Foreground="White" FontSize="18"/>
+            <TextBox Grid.Row="1" Margin="5,0" BorderThickness="0" Background="#353535" Foreground="White"/>
+            <Label Grid.Row="2" Content="Пароль:" Foreground="White" FontSize="18"/>
+            <PasswordBox Grid.Row="3" Margin="5,0" BorderThickness="0" Background="#353535" Foreground="White"/>
+            <Button x:Name="Vxod" Grid.Row="4" Content="Войти" Padding="20,5" Margin="0,20,0,0" Style="{StaticResource GradientButtonStyle}" FontSize="20" Click="Vxod_Click"/>
+            <Button x:Name="RegBtn" Grid.Row="5" Content="Зарегестироваться" Padding="20,5" Margin="0,11,0,-30" Style="{StaticResource GradientButtonStyle}" Click="RegBtn_Click"
+                    
+ FontSize="20"/>
+            <Button x:Name="Zabili" Grid.Row="5" Content="Забыли пароль" Padding="20,5" Margin="0,54,0,-73" Style="{StaticResource GradientButtonStyle}" FontSize="20" Click="Zabili_Click"/>
+
+
+
+        </Grid>
+    </Grid>
+
+</Window>

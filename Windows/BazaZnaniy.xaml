@@ -1,0 +1,33 @@
+﻿<Window x:Class="BELOBORODOV_DIPLOM.Windows.BazaZnaniy"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BELOBORODOV_DIPLOM.Windows"
+        mc:Ignorable="d"
+        Title="Выбор раздела"  Height="750" Width="500" WindowStartupLocation="CenterScreen" >
+    <Grid Background="#202020">
+
+        <TextBlock Text="Выберите раздел:" Margin="57,14,33,0" FontSize="48" Foreground="White" FontFamily="Times New Roman" VerticalAlignment="Top" HorizontalAlignment="Center"  Width="402" Height="56"    />
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="500" Height="550" >
+
+            <Button x:Name="Правила" Style="{StaticResource GradientButtonStyle}"  Content="Правила" Margin="0 0 0 20" FontSize="36" Click="Правила_Click" FontFamily="Times New Roman" Height="70"   />
+            <Button x:Name="Команды" Style="{StaticResource GradientButtonStyle}"  Content="Команды" Margin="0 0 0 20" FontSize="36" Click="Команды_Click" FontFamily="Times New Roman"  Height="70"    />
+            <Button x:Name="Трассы" Style="{StaticResource GradientButtonStyle}"   Content="Трассы" Margin="0 0 0 20" FontSize="36" Click="Трассы_Click" FontFamily="Times New Roman"   Height="70"      />
+            <Button x:Name="Пит_стоп" Style="{StaticResource GradientButtonStyle}"  Content="Пит стоп" Margin="0 0 0 20" FontSize="36" Click="Пит_стоп_Click" FontFamily="Times New Roman"  Height="70"   />
+            <Button x:Name="Машина" Style="{StaticResource GradientButtonStyle}"  Content="Машина" FontSize="36" Margin="0 0 0 20" Click="Машина_Click" FontFamily="Times New Roman"   Height="70"          />
+            <Button x:Name="Выход" Style="{StaticResource GradientButtonStyle}"    Content="Выход" Margin="0 0 0 20"  FontSize="36" Click="Выход_Click" FontFamily="Times New Roman"   Height="70"     />
+
+            <Image Source="/Images/книжки.png" Margin="0 -1000 230 0" Width="60" Height="70" />
+            <Image Source="/Images/выйти.png" Margin="0 -110 220 0" Width="75" Height="80" />
+
+            <Image Source="/Images/ferrari.png"  Margin="0 -820 230 0" Width="70" Height="65" />
+            <Image Source="/Images/pngegg.png" Margin="0 -290 230 0" Width="80" Height="55" />
+            <Image Source="/Images/pngwing.com.png"  Margin="0 -460 230 0" Width="80" Height="55" />
+            <Image Source="/Images/трасса.png"  Margin="0 -642 210 0" Width="80" Height="55" />
+
+        </StackPanel>
+
+
+    </Grid>
+</Window>

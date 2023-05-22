@@ -1,0 +1,66 @@
+﻿<Window x:Name="Главное_окно" x:Class="BELOBORODOV_DIPLOM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BELOBORODOV_DIPLOM"
+        mc:Ignorable="d"
+         Title="MainWindow" Height="500" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid Background="#F2F2F2">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Border VerticalAlignment="Bottom" Height="50" Background="#007ACC">
+            <Label Content="Главная страница" FontSize="22" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"  FontWeight="Bold" FontFamily="Times New Roman" />
+        </Border>
+        <Grid Grid.Row="1" Margin="10" Background="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Label Content="Выберите раздел" Foreground="Black" FontSize="20" FontWeight="Bold" Background="#FFFFF8F8" FontFamily="Times New Roman"/>
+            <ListBox Grid.Row="1" Margin="5,0" Background="White" BorderThickness="0" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                <ListBoxItem>
+                    <StackPanel Orientation="Horizontal">
+                       <Image Source="/Images/книжки.png"
+
+  Width="100" Height="100"/>
+                        <StackPanel Margin="10,20,10,0">
+                            <Label Content="База знаний" FontSize="16" FontFamily="Times New Roman"/>
+
+                            <Button Content="Перейти" FontSize="16" Foreground="#0091EA" FontWeight="Bold" Margin="0,5,0,0" Background="White" Click="Button_Click" FontFamily="Times New Roman"/>
+                        </StackPanel>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Images/анкета.png" 
+
+   Width="100" Height="100"/>
+                        <StackPanel Margin="10,20,0,0">
+                            <Label Content="Моя статистика" FontSize="16" FontFamily="Times New Roman"/>
+
+                            <Button Content="Посмотреть" FontSize="16" Foreground="#0091EA" FontWeight="Bold" Margin="0,5,0,0" Background="White" Click="Button_Click_2" FontFamily="Times New Roman"/>
+                        </StackPanel>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Images/тесты.png"
+
+
+  Width="100" Height="100"/>
+                        <StackPanel Margin="10,10,20,0">
+                            <Label Content="Тесты" FontSize="16"  Width="59" FontFamily="Times New Roman"  Margin="10 0 10 0" />
+                            <Button x:Name="Perexod_na_Test" Content="Пройти" FontSize="16" Foreground="#0091EA" FontWeight="Bold" Margin="0,5,0,0" BorderBrush="#FF686767" Background="White" Width="101" Click="Perexod_na_Test_Click" FontFamily="Times New Roman"/>
+
+                        </StackPanel>
+                    </StackPanel>
+                </ListBoxItem>
+            </ListBox>
+            <Button x:Name="Уйти" Style="{StaticResource ButtonStyle}" FontSize="20" Grid.Row="2" Content="Выйти"   FontWeight="Bold" Background="#007ACC" Margin="10 10 10 10" Foreground="White" Height="35" FontFamily="Times New Roman" Click="Уйти_Click"/>
+        </Grid>
+    </Grid>
+</Window>
