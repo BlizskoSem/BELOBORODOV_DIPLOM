@@ -24,7 +24,7 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <Label Content="Введите почту для восстановления пароля" Foreground="White" FontSize="15"/>
-            <TextBox Grid.Row="1" Margin="5 15" BorderThickness="0" Background="#353535" Foreground="White" Height="20"/>
+            <TextBox x:Name="txt_Email" Grid.Row="1" Margin="5 15" BorderThickness="0" Background="#353535" Foreground="White" Height="20"/>
            
             <Button x:Name="Dalee" Grid.Row="4" Content="Продолжить" Padding="20,5" Margin="0,15,0,0" Style="{StaticResource GradientButtonStyle}" FontSize="20" Click="Dalee_Click"/>
 

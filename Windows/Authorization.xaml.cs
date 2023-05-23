@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BELOBORODOV_DIPLOM.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,8 +22,15 @@ namespace BELOBORODOV_DIPLOM.Windows {
 			InitializeComponent();
 		}
 
+		internal Authorization(User user) {
+			InitializeComponent();
+			if (user is null) return;
+			txt_Password.Password = user.Password;
+			txt_User.Text = user.Name;
+		}
+
 		private void Vxod_Click(object sender, RoutedEventArgs e) {
-			var rez = App.Repo.GetUserByNameAndPwd(txt_User.Text??"", txt_Password.Password??"");
+			var rez = App.Repo.GetUserByNameAndPwd(txt_User.Text ?? "", txt_Password.Password ?? "");
 			if (rez.Success) {
 				if (rez.OutData.IsValid) {
 					App.CurrentUser = rez.OutData;

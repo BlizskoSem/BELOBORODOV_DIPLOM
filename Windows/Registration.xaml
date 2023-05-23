@@ -25,11 +25,11 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <Label Content="Имя пользователя:" Foreground="White" FontSize="18"/>
-            <TextBox Grid.Row="1" Margin="5,0" BorderThickness="0" Background="#353535" Foreground="White"/>
+            <TextBox x:Name="txt_User" Grid.Row="1" Margin="5,0" BorderThickness="0" Background="#353535" Foreground="White"/>
             <Label Grid.Row="2" Content="Пароль:" Foreground="White" FontSize="18"/>
-            <PasswordBox Grid.Row="3" Margin="5,0" BorderThickness="0" Background="#353535" Foreground="White"/>
+            <PasswordBox x:Name="txt_Pwd" Grid.Row="3" Margin="5,0" BorderThickness="0" Background="#353535" Foreground="White"/>
             <Label Grid.Row="4" Content="E-mail:" Foreground="White" FontSize="18"/>
-            <TextBox Grid.Row="5" Margin="5,0,5,-19" BorderThickness="0" Background="#353535" Foreground="White"/>
+            <TextBox x:Name="txt_Email" Grid.Row="5" Margin="5,0,5,-19" BorderThickness="0" Background="#353535" Foreground="White"/>
             <Button x:Name="RegBuuton" Grid.Row="6" Content="Зарегистрироваться" Padding="20,5" Margin="0,40,0,-50" Style="{StaticResource GradientButtonStyle}" FontSize="20" Click="RegBuuton_Click"/>
             <Button x:Name="Est_Accaunt" Grid.Row="7" Content="Есть аккаунт?" Padding="20,5" Margin="0,77,0,-87" Style="{StaticResource GradientButtonStyle}" FontSize="20" Click="Est_Accaunt_Click"/>
         </Grid>
