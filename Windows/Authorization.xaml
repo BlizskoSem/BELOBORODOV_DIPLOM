@@ -24,9 +24,9 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <Label Content="Имя пользователя:" Foreground="White" FontSize="18"/>
-            <TextBox Grid.Row="1" Margin="5,0" BorderThickness="0" Background="#353535" Foreground="White"/>
+            <TextBox x:Name="txt_User" Grid.Row="1" Margin="5,0" BorderThickness="0" Background="#353535" Foreground="White"/>
             <Label Grid.Row="2" Content="Пароль:" Foreground="White" FontSize="18"/>
-            <PasswordBox Grid.Row="3" Margin="5,0" BorderThickness="0" Background="#353535" Foreground="White"/>
+            <PasswordBox x:Name="txt_Password" PasswordChar="*" Grid.Row="3" Margin="5,0" BorderThickness="0" Background="#353535" Foreground="White"/>
             <Button x:Name="Vxod" Grid.Row="4" Content="Войти" Padding="20,5" Margin="0,20,0,0" Style="{StaticResource GradientButtonStyle}" FontSize="20" Click="Vxod_Click"/>
             <Button x:Name="RegBtn" Grid.Row="5" Content="Зарегестироваться" Padding="20,5" Margin="0,11,0,-30" Style="{StaticResource GradientButtonStyle}" Click="RegBtn_Click"
                     

@@ -36,6 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -55,6 +56,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Ifrastructure\MSSQLRepository.cs" />
+    <Compile Include="Ifrastructure\Result.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Windows\Authorization.xaml.cs">
       <DependentUpon>Authorization.xaml</DependentUpon>
     </Compile>
@@ -158,8 +162,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Class\" />
-    <Folder Include="Models\" />
+    <Content Include="DBScripts\script.sql" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\logo.png" />
